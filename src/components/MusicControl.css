@@ -1,0 +1,29 @@
+.music-control {
+  position: fixed;
+  right: max(1.1rem, env(safe-area-inset-right, 0px));
+  bottom: max(1.1rem, env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--gold-hairline);
+  background: rgba(250, 246, 238, 0.85);
+  backdrop-filter: blur(6px);
+  color: var(--dark-brown);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(58, 44, 34, 0.12);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.music-control:hover,
+.music-control:focus-visible {
+  background: var(--warm-white);
+}
+
+.music-control:active {
+  transform: scale(0.94);
+}

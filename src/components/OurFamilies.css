@@ -1,0 +1,43 @@
+.families {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  margin-top: 1.5rem;
+}
+
+.families__side {
+  max-width: 340px;
+}
+
+.families__role {
+  margin: 0 0 0.2rem;
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--muted-gold);
+}
+
+.families__parents {
+  margin: 0.3rem 0 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+}
+
+.families__and {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1rem;
+  color: var(--soft-gold);
+}
+
+@media (min-width: 640px) {
+  .families {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2.4rem;
+  }
+}

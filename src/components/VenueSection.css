@@ -1,0 +1,55 @@
+.venue {
+  background:
+    linear-gradient(180deg, rgba(236,226,205,0.92), rgba(250,246,238,0.98));
+}
+
+.venue__preview {
+  position: relative;
+  margin: 1.8rem auto;
+  width: min(520px, 92vw);
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid var(--gold-hairline);
+  background:
+    linear-gradient(135deg, rgba(201,162,75,0.1), transparent 52%),
+    repeating-linear-gradient(18deg,
+      transparent 0 28px,
+      rgba(58,44,34,0.05) 29px 30px
+    ),
+    repeating-linear-gradient(105deg,
+      transparent 0 42px,
+      rgba(58,44,34,0.045) 43px 44px
+    ),
+    var(--warm-white);
+  box-shadow: 0 16px 34px rgba(58,44,34,0.1);
+}
+
+.venue__preview::before {
+  content: "RAMJAN MAHAL";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.7rem 1.1rem;
+  border-radius: 999px;
+  background: rgba(255,253,248,0.9);
+  border: 1px solid var(--gold-hairline);
+  color: var(--dark-brown);
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+}
+
+.venue__preview::after {
+  content: "📍";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -190%);
+  font-size: 1.4rem;
+}
+
+.venue__pin {
+  display: none;
+}

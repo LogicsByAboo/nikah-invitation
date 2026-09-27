@@ -1,0 +1,13 @@
+.invitation { overflow: clip; animation: invitation-reveal 1s ease both; }
+
+.invitation .section__inner,
+.invitation .hero__photo-wrap,
+.invitation .families,
+.invitation .venue__preview,
+.invitation .scratch-card { will-change: transform, opacity; }
+
+@keyframes invitation-reveal { from { opacity: 0; } to { opacity: 1; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .invitation { animation: none; }
+}

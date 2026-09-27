@@ -1,0 +1,140 @@
+.app {
+  position: relative;
+  background: var(--ivory);
+}
+
+.section {
+  width: 100%;
+  padding: var(--section-gap) 0;
+  position: relative;
+}
+
+.section__inner {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.section--center {
+  text-align: center;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  letter-spacing: 0.24em;
+  color: var(--muted-gold);
+  font-weight: 500;
+}
+
+.heading-lg {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(2.1rem, 7vw, 3rem);
+  line-height: 1.15;
+  color: var(--charcoal);
+  margin: 0.4em 0;
+}
+
+.heading-md {
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: clamp(1.5rem, 5vw, 1.9rem);
+  color: var(--charcoal);
+  margin: 0.3em 0;
+}
+
+.body-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 3.6vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+.arabic-text {
+  font-family: var(--font-arabic);
+  direction: rtl;
+  font-size: clamp(1.35rem, 5.5vw, 1.7rem);
+  line-height: 2;
+  color: var(--charcoal);
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: var(--soft-gold);
+  margin: 1.6rem 0;
+  user-select: none;
+}
+
+.ornament__line {
+  height: 1px;
+  width: 42px;
+  background: linear-gradient(to right, transparent, var(--soft-gold));
+}
+
+.ornament__line--right {
+  background: linear-gradient(to left, transparent, var(--soft-gold));
+}
+
+.ornament__mark {
+  font-size: 0.9rem;
+  transform: rotate(45deg);
+  display: inline-block;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--gold-hairline);
+  background: transparent;
+  color: var(--dark-brown);
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--soft-gold);
+  color: var(--warm-white);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn--solid {
+  background: var(--soft-gold);
+  color: var(--warm-white);
+  border-color: var(--soft-gold);
+}
+
+.btn--solid:hover,
+.btn--solid:focus-visible {
+  background: var(--muted-gold);
+  border-color: var(--muted-gold);
+}
+
+:focus-visible {
+  outline: 2px solid var(--soft-gold);
+  outline-offset: 3px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

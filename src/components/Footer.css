@@ -1,0 +1,18 @@
+.footer {
+  padding: 3.5rem 0 3rem;
+  text-align: center;
+  border-top: 1px solid var(--hairline);
+}
+
+.footer__prompt {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: 1.05rem;
+  color: var(--dark-brown);
+}
+
+.footer__sub {
+  margin: 0.3rem 0 1.3rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+}

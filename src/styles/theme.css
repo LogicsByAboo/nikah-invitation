@@ -1,0 +1,65 @@
+:root {
+  /* Color system — gold is a restrained accent, ivory carries the page */
+  --ivory: #faf6ee;
+  --warm-white: #fffdf8;
+  --champagne: #e7d3a1;
+  --soft-gold: #c9a24b;
+  --muted-gold: #a9843a;
+  --beige: #ece2cd;
+  --dark-brown: #3a2c22;
+  --charcoal: #241d17;
+
+  --ink: var(--charcoal);
+  --ink-soft: #5c4d3f;
+  --hairline: rgba(58, 44, 34, 0.14);
+  --gold-hairline: rgba(169, 132, 58, 0.45);
+
+  /* Type */
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --font-title: "Marcellus", "Cormorant Garamond", Georgia, serif;
+  --font-body: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --font-arabic: "Amiri", "Traditional Arabic", "Scheherazade New", serif;
+
+  --container: min(560px, 92vw);
+  --section-gap: clamp(2rem, 5vw, 3rem);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--ivory);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--champagne);
+  color: var(--charcoal);
+}
